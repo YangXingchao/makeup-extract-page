@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Makeup Extraction of 3D Representation via Illumination-Aware Image Decomposition</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,28 +52,28 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Makeup Extraction of 3D Representation via Illumination-Aware Image Decomposition</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://yangxingchao.github.io" target="_blank">Xingchao Yang</a><sup>1,2</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://taketomitakafumi.sakura.ne.jp/web/" target="_blank">Takafumi Taketomi</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="http://kanamori.cs.tsukuba.ac.jp/index.html" target="_blank">Yoshihiro Kanamori</a><sup>2</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup> CyberAgent, AI Lab &nbsp;<sup>2</sup> University of Tsukuba <br>Computer Graphics Forum (Proc. of Eurographics 2023)</span>
+                    <span class="eql-cntrb"><small><br>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2302.13279.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -84,7 +84,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="static/pdfs/EG2023_MakeupExtraction_Supplementary.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -94,7 +94,7 @@
                   </span>
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -102,11 +102,11 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2302.13279" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -123,22 +123,39 @@
 </section>
 
 
+<!-- Teaser image-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/teaser.png" alt="Banner image" height="100%">
+      <h2 class="subtitle has-text-centered">
+        Makeup-aware facial inverse rendering and component-wise reconstruction. The top row displays a makeup portrait input and overlaid rendering images (from left to right: bare skin only, bare skin plus makeup, bare skin multiplied by diffuse shading, and plus specular reconstruction) whereas the bottom row shows disentangled materials in the UV space. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser image -->
+
+
+
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/eg_makeup_2023.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      <h2 class="subtitle has-text-centered"><br>
+        3D Avatar is widely used in movies and advertisements, with facial makeup being a crucial aspect of creating these lifelike digital characters. However, the process of editing makeup on a 3D face or using specialized equipment can be time-consuming. To obtain facial makeup for 3D characters, we propose a method to extract makeup from a single face image in a UV format that can be used for 3D face models. We unwarp the input image to UV texture so that it can be applied to a 3D face model. Then, we decompose the UV texture to bare skin, makeup, and lighting effects.
       </h2>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
+
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,9 +165,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Facial makeup enriches the beauty of not only real humans but also virtual characters; therefore, makeup for 3D facial models is highly in demand in productions. However, painting directly on 3D faces and capturing real-world makeup are costly, and extracting makeup from 2D images often struggles with shading effects and occlusions. This paper presents the first method for extracting makeup for 3D facial models from a single makeup portrait. Our method consists of the following three steps. First, we exploit the strong prior of 3D morphable models via regression-based inverse rendering to extract coarse materials such as geometry and diffuse/specular albedos that are represented in the UV space. Second, we refine the coarse materials, which may have missing pixels due to occlusions. We apply inpainting and optimization. Finally, we extract the bare skin, makeup, and an alpha matte from the diffuse albedo. Our method offers various applications for not only 3D facial models but also 2D portrait images. The extracted makeup is well-aligned in the UV space, from which we build a large-scale makeup dataset and a parametric makeup model for 3D faces. Our disentangled materials also yield robust makeup transfer and illumination-aware makeup interpolation/removal without a reference image.
           </p>
         </div>
+        <img src="static/images/teaser.png" alt="Banner image" height="100%">
+        <h2 class="subtitle has-text-centered"><br>
+          Makeup-aware facial inverse rendering and component-wise reconstruction. The top row displays a makeup portrait input and overlaid rendering images (from left to right: bare skin only, bare skin plus makeup, bare skin multiplied by diffuse shading, and plus specular reconstruction) whereas the bottom row shows disentangled materials in the UV space. 
+        </h2>
       </div>
     </div>
   </div>
@@ -165,30 +186,37 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
+        <img src="static/images/introduction_app.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered"><br>
+          Example applications of our method. From left to right, makeup controllable 3D face reconstruction, illumination-aware makeup interpolation/removal/relighting, illumination-aware makeup transfer, and makeup data collection.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
+        <img src="static/images/method_0.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered"><br>
+          Overview of our framework. Given a makeup portrait, we extract an illumination-independent bare skin and makeup in the UV space via the following three steps; First, we reconstruct a 3D face to estimate the coarse facial materials using a 3D face reconstruction network. Second, we refine the coarse facial materials, which may have missing pixels owing to occlusion. We apply an inpainting network <i>DSD-GAN</i> and then apply optimization. Finally, we extract a bare skin, makeup, and an alpha matte from the refined diffuse albedo using makeup extraction network <i>E</i>.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
+        <img src="static/images/result_transfer.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered"><br>
+          Qualitative comparison of makeup transfer between two faces. Left to right: source images providing the identity and illumination, the reference images providing the makeup, (a) BeautyGAN, (b) PSGAN, (c) CPM, (d) SCGAN, (e) EleGANt, and (f) our results, which retain the lighting effects.
        </h2>
      </div>
      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/result_interpolate.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered"><br>
+          Results of illumination-aware makeup interpolation and removal. Left to right: the original makeup was interpolated and finally removed. The first row presents the interpolation results with constant illumination. The final row presents the rendered faces with relighting.
+       </h2>
+     </div>
+     <div class="item">      
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
+      <img src="static/images/result_pca.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered"><br>
+        3D face reconstruction results using 3D morphable model (3DMM). The PCA-based makeup model significantly improves the fidelity of synthesized makeup.
       </h2>
     </div>
   </div>
@@ -201,66 +229,28 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container"> -->
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <!-- <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <div class="publication-video">
+          <div class="publication-video"> -->
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +260,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -278,7 +268,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{yang2023makeup,
+        title={Makeup Extraction of 3D Representation via Illumination-Aware Image Decomposition}, 
+        author={Xingchao Yang and Takafumi Taketomi and Yoshihiro Kanamori},
+        year={2023},
+        eprint={2302.13279},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+  }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -292,7 +289,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
