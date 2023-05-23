@@ -177,7 +177,7 @@
             Facial makeup enriches the beauty of not only real humans but also virtual characters; therefore, makeup for 3D facial models is highly in demand in productions. However, painting directly on 3D faces and capturing real-world makeup are costly, and extracting makeup from 2D images often struggles with shading effects and occlusions. This paper presents the first method for extracting makeup for 3D facial models from a single makeup portrait. Our method consists of the following three steps. First, we exploit the strong prior of 3D morphable models via regression-based inverse rendering to extract coarse materials such as geometry and diffuse/specular albedos that are represented in the UV space. Second, we refine the coarse materials, which may have missing pixels due to occlusions. We apply inpainting and optimization. Finally, we extract the bare skin, makeup, and an alpha matte from the diffuse albedo. Our method offers various applications for not only 3D facial models but also 2D portrait images. The extracted makeup is well-aligned in the UV space, from which we build a large-scale makeup dataset and a parametric makeup model for 3D faces. Our disentangled materials also yield robust makeup transfer and illumination-aware makeup interpolation/removal without a reference image.
           </p>
         </div>
-        <img src="static/images/teaser.png" alt="Banner image" height="100%">
+        <img src="static/images/teaser.jpg" alt="Banner image" height="100%">
         <h2 class="subtitle has-text-centered"><br>
           Makeup-aware facial inverse rendering and component-wise reconstruction. The top row displays a makeup portrait input and overlaid rendering images (from left to right: bare skin only, bare skin plus makeup, bare skin multiplied by diffuse shading, and plus specular reconstruction) whereas the bottom row shows disentangled materials in the UV space. 
         </h2>
@@ -195,35 +195,35 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/introduction_app.png" alt="MY ALT TEXT"/>
+        <img src="static/images/introduction_app.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered"><br>
           Example applications of our method. From left to right, makeup controllable 3D face reconstruction, illumination-aware makeup interpolation/removal/relighting, illumination-aware makeup transfer, and makeup data collection.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/method_0.png" alt="MY ALT TEXT"/>
+        <img src="static/images/method_0.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered"><br>
           Overview of our framework. Given a makeup portrait, we extract an illumination-independent bare skin and makeup in the UV space via the following three steps; First, we reconstruct a 3D face to estimate the coarse facial materials using a 3D face reconstruction network. Second, we refine the coarse facial materials, which may have missing pixels owing to occlusion. We apply an inpainting network <i>DSD-GAN</i> and then apply optimization. Finally, we extract a bare skin, makeup, and an alpha matte from the refined diffuse albedo using makeup extraction network <i>E</i>.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/result_transfer.png" alt="MY ALT TEXT"/>
+        <img src="static/images/result_transfer.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered"><br>
           Qualitative comparison of makeup transfer between two faces. Left to right: source images providing the identity and illumination, the reference images providing the makeup, (a) BeautyGAN, (b) PSGAN, (c) CPM, (d) SCGAN, (e) EleGANt, and (f) our results, which retain the lighting effects.
        </h2>
      </div>
      <div class="item">
         <!-- Your image here -->
-        <img src="static/images/result_interpolate.png" alt="MY ALT TEXT"/>
+        <img src="static/images/result_interpolate.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered"><br>
           Results of illumination-aware makeup interpolation and removal. Left to right: the original makeup was interpolated and finally removed. The first row presents the interpolation results with constant illumination. The final row presents the rendered faces with relighting.
        </h2>
      </div>
      <div class="item">      
       <!-- Your image here -->
-      <img src="static/images/result_pca.png" alt="MY ALT TEXT"/>
+      <img src="static/images/result_pca.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered"><br>
         3D face reconstruction results using 3D morphable model (3DMM). The PCA-based makeup model significantly improves the fidelity of synthesized makeup.
       </h2>
