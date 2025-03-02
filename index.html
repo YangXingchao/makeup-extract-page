@@ -245,7 +245,48 @@
 </section>
 <!-- End image carousel -->
 
-
+<!-- Dataset Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Extracted Makeup UV Materials</h2>
+        <div class="content has-text-justified">
+          <p>
+            You can download the extracted makeup UV materials from <a href="https://drive.google.com/file/d/1KC1eUU8HLD7y_DdomSzGKJWR2Hmapzr4/view?usp=drive_link" target="_blank" style="font-weight: bold; color: #3273dc; text-decoration: underline;">makeup_extract_dataset</a>.
+            This dataset is extracted from 3068 images (sourced from MT dataset and LADN dataset).
+            The material size is set to 512 for all generated materials.
+          </p>
+          
+          <h3 class="title is-4">Dataset Structure</h3>
+          
+          <h4 class="title is-5">Root Folders</h4>
+          <ul>
+            <li>📁 <code>images/</code> - Original 2D face input images</li>
+            <li>📁 <code>uvs/</code> - UV texture maps completed by DSD-GAN</li>
+            <li>📁 <code>materials/</code> - Material uv maps obtained through image decomposition
+              <ul>
+                <li>📁 <code>albe/</code> - Diffuse albedo maps</li>
+                <li>📁 <code>diff/</code> - Diffuse shading maps</li>
+                <li>📁 <code>norm/</code> - Normal maps</li>
+                <li>📁 <code>spec/</code> - Specular shading maps</li>
+                <li>📁 <code>bare/</code> - Base face maps without makeup</li>
+                <li>📁 <code>alpha/</code> - Makeup alpha/transparency maps</li>
+                <li>📁 <code>bias/</code> - Makeup Bias maps</li>
+                <li>📁 <code>blend/</code> - Makeup blending maps</li>
+              </ul>
+            </li>
+          </ul>
+          
+          <p class="is-size-5" style="font-weight: 500;">
+            If you find this dataset useful, please consider citing our paper.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Dataset Section -->
 
 
 <!-- Youtube video -->
@@ -282,6 +323,7 @@
     </div>
   </section> -->
 <!--End paper poster -->
+
 
 
 <!--BibTex citation -->
